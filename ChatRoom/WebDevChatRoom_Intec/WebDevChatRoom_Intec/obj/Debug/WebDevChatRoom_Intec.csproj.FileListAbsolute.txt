@@ -1,0 +1,13 @@
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\bin\Debug\WebDevChatRoom_Intec.exe.config
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\bin\Debug\WebDevChatRoom_Intec.exe
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\bin\Debug\WebDevChatRoom_Intec.pdb
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\obj\Debug\WebDevChatRoom_Intec.Form1.resources
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\obj\Debug\WebDevChatRoom_Intec.Properties.Resources.resources
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\obj\Debug\WebDevChatRoom_Intec.csproj.GenerateResource.cache
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\obj\Debug\WebDevChatRoom_Intec.csproj.CoreCompileInputs.cache
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\obj\Debug\WebDevChatRoom_Intec.csproj.CopyComplete
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\obj\Debug\WebDevChatRoom_Intec.exe
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\obj\Debug\WebDevChatRoom_Intec.pdb
+C:\Users\dany_salas\source\repos\WebDevChatRoom_Intec\WebDevChatRoom_Intec\obj\Debug\WebDevChatRoom_Intec.csprojResolveAssemblyReference.cache

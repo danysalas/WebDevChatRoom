@@ -1,0 +1,7 @@
+c:\users\dany_salas\source\repos\CompareStrings\CompareStrings\bin\Debug\CompareStrings.exe.config
+c:\users\dany_salas\source\repos\CompareStrings\CompareStrings\bin\Debug\CompareStrings.exe
+c:\users\dany_salas\source\repos\CompareStrings\CompareStrings\bin\Debug\CompareStrings.pdb
+c:\users\dany_salas\source\repos\CompareStrings\CompareStrings\obj\Debug\CompareStrings.csprojResolveAssemblyReference.cache
+c:\users\dany_salas\source\repos\CompareStrings\CompareStrings\obj\Debug\CompareStrings.csproj.CoreCompileInputs.cache
+c:\users\dany_salas\source\repos\CompareStrings\CompareStrings\obj\Debug\CompareStrings.exe
+c:\users\dany_salas\source\repos\CompareStrings\CompareStrings\obj\Debug\CompareStrings.pdb

@@ -1,0 +1,19 @@
+C:\Users\patricia_espinal\Documents\Visual Studio 2017\Projects\ChatServer\ChatServer\bin\Debug\ChatServer.exe.config
+C:\Users\patricia_espinal\Documents\Visual Studio 2017\Projects\ChatServer\ChatServer\bin\Debug\ChatServer.exe
+C:\Users\patricia_espinal\Documents\Visual Studio 2017\Projects\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\patricia_espinal\Documents\Visual Studio 2017\Projects\ChatServer\ChatServer\obj\Debug\ChatServer.csprojResolveAssemblyReference.cache
+C:\Users\patricia_espinal\Documents\Visual Studio 2017\Projects\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\patricia_espinal\Documents\Visual Studio 2017\Projects\ChatServer\ChatServer\obj\Debug\ChatServer.exe
+C:\Users\patricia_espinal\Documents\Visual Studio 2017\Projects\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
+C:\Users\patricia_espinal\Documents\Visual Studio 2017\Projects\ChatServer\ChatServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\patricia_espinal\Documents\Visual Studio 2017\Projects\ChatServer\ChatServer\bin\Debug\Newtonsoft.Json.xml
+I:\ChatServer\ChatServer\bin\Debug\ChatServer.exe.config
+I:\ChatServer\ChatServer\bin\Debug\ChatServer.exe
+I:\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
+I:\ChatServer\ChatServer\bin\Debug\Newtonsoft.Json.dll
+I:\ChatServer\ChatServer\bin\Debug\Newtonsoft.Json.xml
+I:\ChatServer\ChatServer\obj\Debug\ChatServer.csprojResolveAssemblyReference.cache
+I:\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+I:\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
+I:\ChatServer\ChatServer\obj\Debug\ChatServer.exe
+I:\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
