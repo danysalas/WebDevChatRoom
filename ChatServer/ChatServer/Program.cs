@@ -9,8 +9,6 @@ namespace ChatServer
 {
     class Program
     {
-
-
         public static Hashtable clientsList = new Hashtable();
         static void Main(string[] args)
         {
@@ -33,13 +31,12 @@ namespace ChatServer
                 networkStream.Read(bytesFrom, 0, (int)clientSocket.ReceiveBufferSize);
                 dataFromClient = System.Text.Encoding.ASCII.GetString(bytesFrom);
                 var userMessage =  JsonConvert.DeserializeObject<User>(dataFromClient);
-                //dataFromClient = dataFromClient.Substring(0, dataFromClient.IndexOf("$"));
                 clientsList.Add(userMessage.UserName, clientSocket);
-
-                broadcast(userMessage.UserName + " Joined ", userMessage.Message, false);
-
-                Console.WriteLine(userMessage.UserName + " Joined chat room ");
-                handleClinet client = new handleClinet();
+                broadcast("<<<" + userMessage.UserName + " Joined >>>", userMessage.UserName, false);
+				broadcast(userMessage.Message, userMessage.UserName, true);
+				Console.WriteLine(userMessage.UserName + " Joined chat room ");
+				Console.WriteLine("Message from - " + userMessage.UserName + " : " + userMessage.Message);
+				ClientHandler client = new ClientHandler();
                 client.startClient(clientSocket, userMessage.UserName, clientsList);
             }
             //clientSocket.Close();
@@ -69,8 +66,8 @@ namespace ChatServer
                 broadcastStream.Write(broadcastBytes, 0, broadcastBytes.Length);
                 broadcastStream.Flush();
             }
-        }  //end broadcast function
-    }//end Main class
+        } 
+    }
 
    
 }
