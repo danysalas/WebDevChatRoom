@@ -5,6 +5,10 @@ Client Side - ChatRoom. Diplomado Programacion Web C# Intec.
 
 # git-flow cheatsheet
  https://danielkummer.github.io/git-flow-cheatsheet/
+ 
+ Git flow provides excellent command line help and output. Read it carefully to see what's happening...
+The OSX/Windows Client Sourcetree is an excellent git gui and provides git-flow support
+Git-flow is a merge based solution. It doesn't rebase feature branches.
 
 # Semantic Versioning 1.0.0
 In the world of software management there exists a dread place called “dependency hell.” The bigger your system grows and the more packages you integrate into your software, the more likely you are to find yourself, one day, in this pit of despair.
