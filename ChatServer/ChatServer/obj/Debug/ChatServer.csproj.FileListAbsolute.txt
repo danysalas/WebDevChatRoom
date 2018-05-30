@@ -27,3 +27,13 @@ C:\Users\Optiplex 990\Documents\GitHub\WebDevChatRoom\ChatServer\ChatServer\obj\
 C:\Users\Optiplex 990\Documents\GitHub\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
 C:\Users\Optiplex 990\Documents\GitHub\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.exe
 C:\Users\Optiplex 990\Documents\GitHub\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
+E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\bin\Debug\ChatServer.exe.config
+E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\bin\Debug\ChatServer.exe
+E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
+E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\bin\Debug\Newtonsoft.Json.dll
+E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\bin\Debug\Newtonsoft.Json.xml
+E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.csprojAssemblyReference.cache
+E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
+E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.exe
+E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
