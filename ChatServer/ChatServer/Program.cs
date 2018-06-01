@@ -4,6 +4,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Collections;
 using Newtonsoft.Json;
+using System.Net;
 
 namespace ChatServer
 {
@@ -12,11 +13,20 @@ namespace ChatServer
         public static Hashtable clientsList = new Hashtable();
         static void Main(string[] args)
         {
-            TcpListener serverSocket = new TcpListener(8888);
+            TcpListener serverSocket = new TcpListener( IPAddress.Parse("127.0.0.0"), 8888);
             TcpClient clientSocket = default(TcpClient);
             int counter = 0;
 
-            serverSocket.Start();
+            try
+            {
+                serverSocket.Start();
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine(e.ToString());
+            }
+            
             Console.WriteLine("Chat Server Started ....");
             counter = 0;
             while ((true))
