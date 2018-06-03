@@ -180,6 +180,7 @@
             this.Controls.Add(this.listview_chat);
             this.Name = "Form1";
             this.Text = "WebDev Chatroom_INTEC";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

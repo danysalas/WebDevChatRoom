@@ -11,48 +11,66 @@ namespace ChatServer
     class Program
     {
         public static Hashtable clientsList = new Hashtable();
+        public static Socket _socket;
+        public static byte[] _buffer =new byte[1024];
+        public static string dataFromClient = null;
+
         static void Main(string[] args)
         {
-            TcpListener serverSocket = new TcpListener( IPAddress.Parse("127.0.0.0"), 8888);
-            TcpClient clientSocket = default(TcpClient);
-            int counter = 0;
+                
+         _socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-            try
-            {
-                serverSocket.Start();
-            }
-            catch (Exception e)
-            {
+         _socket.Bind(new IPEndPoint(IPAddress.Any,8889));
 
-                Console.WriteLine(e.ToString());
-            }
+         _socket.Listen(500);
+
+         _socket.BeginAccept(AcceptedCallBack, null);
+         
+
+         Console.WriteLine(" Server started ");
+         Console.ReadLine();
+        }
+        public static void Accept()
+        {
+
+            _socket.BeginAccept(AcceptedCallBack, null);
+        }
+
+        public static void AcceptedCallBack(IAsyncResult result)
+        {
+
+            Socket CLientSocket = _socket.EndAccept(result);   
+            _buffer= new byte[1024];
+            CLientSocket.BeginReceive(_buffer, 0, _buffer.Length, SocketFlags.None, ReceiveCallBack, CLientSocket);
+            Accept();
+        }
+
+        public static void ReceiveCallBack(IAsyncResult result)
+        {
+            Socket clientSocket = result.AsyncState as Socket;
+            int buffersize = clientSocket.EndReceive(result);
+            byte[] packet = new byte[buffersize];
+            Array.Copy(_buffer, packet, packet.Length);
+
+
+            dataFromClient = System.Text.Encoding.ASCII.GetString(packet);
+
+            Console.WriteLine();
+
+            var userMessage = JsonConvert.DeserializeObject<User>(dataFromClient);
             
-            Console.WriteLine("Chat Server Started ....");
-            counter = 0;
-            while ((true))
-            {
-                counter += 1;
-                clientSocket = serverSocket.AcceptTcpClient();
+            if (!userMessage.Equals(null)  || userMessage.ToString()=="null" )
+       
 
-                byte[] bytesFrom = new byte[200000];
-                string dataFromClient = null;
+            Console.WriteLine(userMessage.UserName + " Joined chat room ");
 
-                NetworkStream networkStream = clientSocket.GetStream();
-                networkStream.Read(bytesFrom, 0, (int)clientSocket.ReceiveBufferSize);
-                dataFromClient = System.Text.Encoding.ASCII.GetString(bytesFrom);
-                var userMessage =  JsonConvert.DeserializeObject<User>(dataFromClient);
-                clientsList.Add(userMessage.UserName, clientSocket);
-                broadcast("<<<" + userMessage.UserName + " Joined >>>", userMessage.UserName, false);
-				broadcast(userMessage.Message, userMessage.UserName, true);
-				Console.WriteLine(userMessage.UserName + " Joined chat room ");
-				Console.WriteLine("Message from - " + userMessage.UserName + " : " + userMessage.Message);
-				ClientHandler client = new ClientHandler();
-                client.startClient(clientSocket, userMessage.UserName, clientsList);
-            }
-            //clientSocket.Close();
-            //serverSocket.Stop();
-            Console.WriteLine("exit");
-            Console.ReadLine();
+            Console.WriteLine("Message from - " + userMessage.UserName + " : " + userMessage.Message);
+
+
+            // Handle the packet
+            _buffer = new byte[1024];
+            clientSocket.BeginReceive(_buffer, 0, _buffer.Length, SocketFlags.None, ReceiveCallBack, clientSocket);
+
         }
 
         public static void broadcast(string msg, string uName, bool flag)

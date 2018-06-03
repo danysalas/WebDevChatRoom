@@ -37,3 +37,13 @@ E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.cs
 E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
 E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.exe
 E:\WorkSpace\CLONES\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
+C:\WorkSpace\Clone\WebDevChatRoom\ChatServer\ChatServer\bin\Debug\ChatServer.exe.config
+C:\WorkSpace\Clone\WebDevChatRoom\ChatServer\ChatServer\bin\Debug\ChatServer.exe
+C:\WorkSpace\Clone\WebDevChatRoom\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
+C:\WorkSpace\Clone\WebDevChatRoom\ChatServer\ChatServer\bin\Debug\Newtonsoft.Json.dll
+C:\WorkSpace\Clone\WebDevChatRoom\ChatServer\ChatServer\bin\Debug\Newtonsoft.Json.xml
+C:\WorkSpace\Clone\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.csprojAssemblyReference.cache
+C:\WorkSpace\Clone\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+C:\WorkSpace\Clone\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
+C:\WorkSpace\Clone\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.exe
+C:\WorkSpace\Clone\WebDevChatRoom\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
