@@ -10,5 +10,6 @@ namespace ChatServer
     {
         public string UserName { get; set; }
         public string Message { get; set; }
+        public string Command { get; set; }
     }
 }

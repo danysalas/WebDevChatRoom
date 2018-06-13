@@ -22,7 +22,7 @@
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            msg("Client Started");
+            
         }
 
         public void msg(string mesg)
@@ -37,6 +37,12 @@
 
             if(ServerAddress!= null && PortNumber != 0)
             {
+                if (clientSocket.Connected)
+                {
+                    MessageBox.Show($"El Usuario {Username} ya esta cconectado al servidor: {txtServer.Text}, Puerto: {txtPort.Text}");
+                    return;
+                }
+
                 clientSocket.Connect(ServerAddress,PortNumber);
                 msg("Client - Server Connected ...");
             }
@@ -65,6 +71,14 @@
             serverStream.Read(inStream, 0, (int) clientSocket.ReceiveBufferSize);
             string returndata = System.Text.Encoding.ASCII.GetString(inStream);
             msg(String.Format(">>{0}: {1}", Username, returndata));
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            msg("Client Started");
+            txtServer.Text = "127.0.0.1";
+            txtPort.Text = "8889";
+            txtUsername.Text = "Ricardo";
         }
     }
 }
